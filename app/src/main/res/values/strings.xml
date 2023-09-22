@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SocketPractice</string>
+
+    <string name="txt_user">User</string>
+    <string name="txt_url">URL</string>
+    <string name="txt_uid">UID</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_user_step_1">User Step 1</string>
+
+    <string name="txt_server">Server</string>
+    <string name="txt_create">Create</string>
+    <string name="txt_send">Send</string>
+    <string name="txt_ping">Ping</string>
+    <string name="txt_start_auto_ping">Start Auto Ping</string>
+    <string name="txt_stop_auto_ping">Stop Auto Ping</string>
+    <string name="txt_stop">Stop</string>
+
+    <string name="txt_tilde">~</string>
+    <string name="txt_target">Target</string>
+    <string name="txt_start">Start</string>
+    <string name="txt_forced_disconnect">Forced disconnect</string>
+    <string name="txt_disconnect">Disconnect</string>
+
+</resources>

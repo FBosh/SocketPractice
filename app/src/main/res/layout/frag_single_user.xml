@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_url"
+        app:layout_constraintStart_toEndOf="@id/tv_user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_url"
+        app:layout_constraintTop_toTopOf="@id/tv_url"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_uid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_url" />
+
+    <EditText
+        android:id="@+id/et_uid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_uid"
+        app:layout_constraintEnd_toStartOf="@id/tv_name"
+        app:layout_constraintStart_toEndOf="@id/tv_uid"
+        app:layout_constraintTop_toTopOf="@id/tv_uid"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_uid"
+        app:layout_constraintEnd_toStartOf="@id/et_name"
+        app:layout_constraintStart_toEndOf="@id/et_uid"
+        app:layout_constraintTop_toTopOf="@id/tv_uid" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        app:layout_constraintTop_toTopOf="@id/tv_name"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <Button
+        android:id="@+id/btn_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_user_step_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_server"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_user" />
+
+    <EditText
+        android:id="@+id/et_server"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_server"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_server"
+        app:layout_constraintTop_toTopOf="@id/tv_server"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_create"
+        app:layout_constraintEnd_toStartOf="@id/btn_send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_server" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_create"
+        app:layout_constraintTop_toBottomOf="@id/tv_server" />
+
+    <Button
+        android:id="@+id/btn_ping"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_ping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_send" />
+
+    <Button
+        android:id="@+id/btn_start_auto_ping"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_start_auto_ping"
+        app:layout_constraintEnd_toStartOf="@id/btn_stop_auto_ping"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_ping" />
+
+    <Button
+        android:id="@+id/btn_stop_auto_ping"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_stop_auto_ping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_start_auto_ping"
+        app:layout_constraintTop_toBottomOf="@id/btn_ping" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_auto_ping" />
+
+    <TextView
+        android:id="@+id/tv_log"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_stop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

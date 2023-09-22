@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_url"
+        app:layout_constraintStart_toEndOf="@id/tv_user"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_url"
+        app:layout_constraintTop_toTopOf="@id/tv_url"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_uid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_url" />
+
+    <EditText
+        android:id="@+id/et_uid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_uid"
+        app:layout_constraintEnd_toStartOf="@id/tv_tilde"
+        app:layout_constraintStart_toEndOf="@id/tv_uid"
+        app:layout_constraintTop_toTopOf="@id/tv_uid"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_tilde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_tilde"
+        app:layout_constraintBottom_toBottomOf="@id/tv_uid"
+        app:layout_constraintEnd_toStartOf="@id/et_uid_2"
+        app:layout_constraintStart_toEndOf="@id/et_uid"
+        app:layout_constraintTop_toTopOf="@id/tv_uid" />
+
+    <EditText
+        android:id="@+id/et_uid_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/et_uid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_tilde"
+        app:layout_constraintTop_toTopOf="@id/et_uid"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_uid_2" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        app:layout_constraintTop_toTopOf="@id/tv_name"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_target"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <EditText
+        android:id="@+id/et_target"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_target"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_target"
+        app:layout_constraintTop_toTopOf="@id/tv_target"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_start"
+        app:layout_constraintEnd_toStartOf="@id/btn_stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_target" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_stop"
+        app:layout_constraintBottom_toBottomOf="@id/btn_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_start"
+        app:layout_constraintTop_toTopOf="@id/btn_start" />
+
+    <TextView
+        android:id="@+id/tv_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_server"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_stop" />
+
+    <EditText
+        android:id="@+id/et_server"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_server"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_server"
+        app:layout_constraintTop_toTopOf="@id/tv_server"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_forced_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_forced_disconnect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_server" />
+
+    <EditText
+        android:id="@+id/et_forced_disconnect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tv_forced_disconnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_forced_disconnect"
+        app:layout_constraintTop_toTopOf="@id/tv_forced_disconnect"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <Button
+        android:id="@+id/btn_forced_disconnect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/txt_disconnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_forced_disconnect" />
+
+    <TextView
+        android:id="@+id/tv_log"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_forced_disconnect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
